@@ -1,0 +1,9 @@
+<%= form_for( @task , remote: true) do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :priority, "Priority" %>
+  <%= f.text_field :priority %>
+
+  <%= submit_tag "Create Task" %>
+<% end %>

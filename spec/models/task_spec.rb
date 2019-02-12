@@ -19,4 +19,9 @@ RSpec.describe Task, type: :model do
     task = build(:task, priority: nil)
     expect(task).not_to be_valid
   end
+
+  xit "is invalid without due date" do
+    task = build(:task, due_date: nil)
+    expect(task).not_to be_valid
+  end
 end
